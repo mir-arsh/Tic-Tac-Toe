@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon"
+        href="https://imgs.search.brave.com/g2YTm2HLctbEOj85km4K_ge7NnH1yw57zk3vap-oeYs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMi8w/NS8yNC8wMC8wNS9n/YW1lLTcyMTczNzlf/NjQwLnBuZw"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="custom-alert" id="customAlert">
+        <p>🎮 Player 1 starts with <strong>X</strong> and Player 2 plays with <strong>O</strong>. Click on the boxes to
+            play!</p>
+        <button class="alert-close" id="alertClose">Go!</button>
+    </div>
+    <h1>Tic Tac Toe</h1>
+    <div class="msg-container">
+        <h2 class="congrats">Colgratulations!</h2>
+        <h3 class="playerName"></h3>
+        <button class="newGame">New Game</button>
+    </div>
+    <div class="container">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+    <button class="resetBtn">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

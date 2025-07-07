@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #328E6E;
+    color: #f8f8f8;
+    font-family: poppins, sans-serif;
+    font-size: 1.1rem;
+}
+
+h1 {
+    margin: 2rem 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 20rem;
+    gap: 10px;
+}
+
+.box {
+    background-color: #90C67C;
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    border-radius: 20%;
+    cursor: cell;
+    font-size: 40px;
+    color: brown;
+}
+
+.resetBtn {
+    margin-top: 17rem;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #26a533;
+    color: #E1EEBC;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.resetBtn:hover {
+    background-color: #1e7a2b;
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    background-color: green;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 20%;
+    line-height: 3rem;
+}
+
+.newGame {
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #26a533;
+    color: #E1EEBC;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.newGame:hover {
+    background-color: #165e1f;
+}
+
+h2 {
+    color: yellow;
+}
+
+/* Alert Box */
+.custom-alert {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeIn 0.3s ease;
+}
+
+.custom-alert p {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+.alert-close {
+    padding: 8px 20px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.alert-close:hover {
+    background-color: #019874;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
